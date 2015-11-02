@@ -10,17 +10,14 @@
 
 int main()
 {
-    int days_in_a_week = 7;
-    float cm_to_in = 2.54;
+    float numbers_geeks_love[] = {3.1415, 1.6180, 1.4142};
     
-    char the_w;
-    the_w = 'W';
-
-    // insert code here...
-    printf("%d days in a week.\n", days_in_a_week);
-    printf("%f cm per in.\n", cm_to_in);
-    printf("The %c is a cool hotel\n", the_w);
+    printf("PI %f\n", numbers_geeks_love[0]);
+    printf("golden ratio %f\n", numbers_geeks_love[1]);
+    printf("square root of %f\n", numbers_geeks_love[2]);
     
+    int primes[] = {2, 3, 5, 7};
+    printf("the first 4 prime numbers %d %d %d %d\n", primes[0], primes[1], primes[2], primes[3]);
     return 0;
 }
 
