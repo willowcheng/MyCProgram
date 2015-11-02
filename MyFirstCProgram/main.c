@@ -10,14 +10,24 @@
 
 int main()
 {
-    float numbers_geeks_love[] = {3.1415, 1.6180, 1.4142};
+    int a = 9;
+    printf("a %d\n", a);
     
-    printf("PI %f\n", numbers_geeks_love[0]);
-    printf("golden ratio %f\n", numbers_geeks_love[1]);
-    printf("square root of %f\n", numbers_geeks_love[2]);
+    int c = a++;
+    printf("c %d a %d\n", c, a);
     
-    int primes[] = {2, 3, 5, 7};
-    printf("the first 4 prime numbers %d %d %d %d\n", primes[0], primes[1], primes[2], primes[3]);
+    int d = a--;
+    printf("d %d a %d\n", d, a);
+    
+    int b = a % 4;
+    printf("b %d a %d\n", b, a);
+    
+    float fa = 5.0/.5;
+    printf("fa %f\n", fa);
+    
+    fa *= 10;
+    printf("fa %f\n", fa);
+    
     return 0;
 }
 
