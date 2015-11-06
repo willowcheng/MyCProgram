@@ -8,31 +8,18 @@
 
 #include <stdio.h>
 
+int funky_math(int a, int b);
 int main()
 {
-    char a = 'a';
-    char b = 'b';
-    char g = 'g';
+    int foo = 24;
+    int bar = 35;
+    int lots = funky_math(foo, bar) * funky_math(foo, bar);
     
-    char letter = 'b';
-    switch (letter) {
-        case 'a':
-            printf("letter %c is %c\n", letter, a);
-            break;
-            
-        case 'b':
-            printf("letter %c is %c\n", letter, b);
-            break;
-            
-        case 'g':
-            printf("letter %c is %c\n", letter, g);
-            break;
-            
-        default:
-            printf("letter %c not found\n", letter);
-            break;
-    }
+    printf("funky math %d\n", lots);
     
     return 0;
 }
 
+int funky_math(int a, int b) {
+    return a + b + 343;
+}
