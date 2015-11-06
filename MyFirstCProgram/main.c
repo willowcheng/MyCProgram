@@ -8,18 +8,26 @@
 
 #include <stdio.h>
 
-int funky_math(int a, int b);
+void scope_it_out();
 int main()
 {
-    int foo = 24;
-    int bar = 35;
-    int lots = funky_math(foo, bar) * funky_math(foo, bar);
+    char bravo[] = "bravo";
+    printf("%s\n", bravo);
     
-    printf("funky math %d\n", lots);
+    int threshold = 5;
+    if (threshold > 3) {
+        int alpha = 23;
+        int beta = 32;
+        printf("%d %d\n", alpha, beta);
+    }
+    
+    scope_it_out();
     
     return 0;
 }
 
-int funky_math(int a, int b) {
-    return a + b + 343;
+void scope_it_out()
+{
+    char bravo[] = "gamma";
+    printf("%s\n", bravo);
 }
