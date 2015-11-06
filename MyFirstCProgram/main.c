@@ -10,20 +10,29 @@
 
 int main()
 {
-    int a = 11;
-    int b = 13;
-    int minimum;
-    char min_value;
+    char a = 'a';
+    char b = 'b';
+    char g = 'g';
     
-    if (a < b) {
-        minimum = a;
-        min_value = 'a';
-    } else {
-        minimum = b;
-        min_value = 'b';
+    char letter = 'b';
+    switch (letter) {
+        case 'a':
+            printf("letter %c is %c\n", letter, a);
+            break;
+            
+        case 'b':
+            printf("letter %c is %c\n", letter, b);
+            break;
+            
+        case 'g':
+            printf("letter %c is %c\n", letter, g);
+            break;
+            
+        default:
+            printf("letter %c not found\n", letter);
+            break;
     }
     
-    printf("%c %d is the minimum\n", min_value, minimum);
     return 0;
 }
 
