@@ -10,12 +10,20 @@
 
 int main()
 {
-    int many[] = {2, 4, 8};
-    int sum = 0;
-    for (int i = 0; i < 3; i++) {
-        sum += many[i];
-        printf("i %d sum %d\n", i, sum);
+    int a = 11;
+    int b = 13;
+    int minimum;
+    char min_value;
+    
+    if (a < b) {
+        minimum = a;
+        min_value = 'a';
+    } else {
+        minimum = b;
+        min_value = 'b';
     }
+    
+    printf("%c %d is the minimum\n", min_value, minimum);
     return 0;
 }
 
